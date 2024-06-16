@@ -32,8 +32,7 @@ The frontend is built using Vue.js, with Axios for making HTTP requests to the b
 ```bash
 git clone https://github.com/emmaev9/Cake_Tracker
 ```
-2. Set up the PostgreSQL: - install PostgreSQL and run it
-                          - create a database named cake_tracker
+2. Set up the PostgreSQL by creating a database named cake_tracker
 3. Configure database connection in the backend: update 'application.properties' file with your PostgreSQL configurations
 4. Build and run the backend from an IDE like Intellij (the application will start at port 8084)
 5. Open Visual Studio Code (or other text editor)
