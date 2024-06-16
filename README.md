@@ -1,17 +1,36 @@
-Cake Tracker Application
+# Cake Tracker Application
 
-This is a web application developed for keeping track of birthdays of all the people registered. 
-For creating the backend services I used Spring Boot, the communication with the database (PostgreSQL) being handled wth Hibernate.
-The structure of the database follows a layerd architecture. I created packages for each layer to be easy to extand.
-## The controller layer handles HTTP requests related to person entitie. The objects are transformed as needed using DTOs.
-## The service layer contains the bussines logic for the person related operations. I also added an interface to define the functions and to respect the SOLID principles (Dependency Inversion)
-## The repository layer interact with the database directy. I have a Person Repository which extands JPARepository to provide CRUD operations for the Person entity.
+This web application is designed to keep track of the birthdays of all registered people. The backend services are developed using Spring Boot, with Hibernate managing the communication with a PostgreSQL database.
 
-I also have a package with custom exceptions to handle situations where someone is trying to register a person that doens't have at least 18 yeart old or the person is already in the database.
+## Backend Overview
 
-The frontend was build using Vue.js with Axios for making HTTP requests to the backend services.
-The frontend is structures too so it can be easily extended.
+The backend follows a layered architecture, making it easy to extend and maintain. The key components include:
 
+### Controller Layer
+- Handles HTTP requests related to person entities.
+- Utilizes Data Transfer Objects (DTOs) to transform objects as needed.
+
+### Service Layer
+- Contains the business logic for person-related operations.
+- Implements an interface to define the functions, adhering to SOLID principles, specifically Dependency Inversion.
+
+### Repository Layer
+- Directly interacts with the database.
+- The `PersonRepository` extends `JpaRepository` to provide CRUD operations for the `Person` entity.
+
+### Custom Exceptions
+- Handles situations where someone tries to register a person who is under 18 years old or already exists in the database.
+
+## Frontend Overview
+
+The frontend is built using Vue.js, with Axios for making HTTP requests to the backend services. The structure is organized to facilitate easy extension and maintenance.
+
+## Installation and Running Instructions
+
+### Clone the Repository
+```bash
+git clone https://github.com/emmaev9/Cake_Tracker
+```
 Instalation and running instructions
 1. Clone this repository: git clone https://github.com/emmaev9/Cake_Tracker
 2. Set up the PostgreSQL: - install PostgreSQL and run it
