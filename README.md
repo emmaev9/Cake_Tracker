@@ -43,6 +43,7 @@ npm install
 ```
 8. Run the server
 ```bash
+![alt text](demo1.png)
 npm run serve
 ```
 9.Open the application in a browser at the following URL:
